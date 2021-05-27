@@ -1,0 +1,79 @@
+
+State Machine - |Asteroid|fsm_general:fsm|pr_state
+Name pr_state.state_ganar pr_state.state_nivel pr_state.state_new pr_state.state_wait pr_state.state_perder pr_state.state_respawn pr_state.state_corazon pr_state.state_juego pr_state.state_begin pr_state.state_intro 
+pr_state.state_intro 0 0 0 0 0 0 0 0 0 0 
+pr_state.state_begin 0 0 0 0 0 0 0 0 1 1 
+pr_state.state_juego 0 0 0 0 0 0 0 1 0 1 
+pr_state.state_corazon 0 0 0 0 0 0 1 0 0 1 
+pr_state.state_respawn 0 0 0 0 0 1 0 0 0 1 
+pr_state.state_perder 0 0 0 0 1 0 0 0 0 1 
+pr_state.state_wait 0 0 0 1 0 0 0 0 0 1 
+pr_state.state_new 0 0 1 0 0 0 0 0 0 1 
+pr_state.state_nivel 0 1 0 0 0 0 0 0 0 1 
+pr_state.state_ganar 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Asteroid|control_chopper:Bloque_doctor_chopper|fsm_chopper:fsm|pr_state
+Name pr_state.state_c3 pr_state.state_c2 pr_state.state_perder pr_state.state_chopper pr_state.state_wait pr_state.state_idl 
+pr_state.state_idl 0 0 0 0 0 0 
+pr_state.state_wait 0 0 0 0 1 1 
+pr_state.state_chopper 0 0 0 1 0 1 
+pr_state.state_perder 0 0 1 0 0 1 
+pr_state.state_c2 0 1 0 0 0 1 
+pr_state.state_c3 1 0 0 0 0 1 
+
+State Machine - |Asteroid|Control_asteroid:Bloque_Asteroide|fsm_asteroide:fsm|pr_state
+Name pr_state.state_trig pr_state.state_pos pr_state.state_ang pr_state.state_ge1 pr_state.state_gen pr_state.state_wait pr_state.state_count pr_state.state_write pr_state.state_syn pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 0 0 0 0 0 0 0 
+pr_state.state_syn 0 0 0 0 0 0 0 0 1 1 
+pr_state.state_write 0 0 0 0 0 0 0 1 0 1 
+pr_state.state_count 0 0 0 0 0 0 1 0 0 1 
+pr_state.state_wait 0 0 0 0 0 1 0 0 0 1 
+pr_state.state_gen 0 0 0 0 1 0 0 0 0 1 
+pr_state.state_ge1 0 0 0 1 0 0 0 0 0 1 
+pr_state.state_ang 0 0 1 0 0 0 0 0 0 1 
+pr_state.state_pos 0 1 0 0 0 0 0 0 0 1 
+pr_state.state_trig 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Asteroid|Control_disparos:Bloque_DISPARO|fsm_disparos:fsm|pr_state
+Name pr_state.state_count pr_state.state_bola pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 
+pr_state.state_bola 0 1 1 
+pr_state.state_count 1 0 1 
+
+State Machine - |Asteroid|Velocidad_nave:Bloque_VEL_NAVE|fsm_velocidad:fsm|pr_state
+Name pr_state.state_pos pr_state.state_w3 pr_state.state_vel pr_state.state_w2 pr_state.state_w1 pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 0 0 0 
+pr_state.state_w1 0 0 0 0 1 1 
+pr_state.state_w2 0 0 0 1 0 1 
+pr_state.state_vel 0 0 1 0 0 1 
+pr_state.state_w3 0 1 0 0 0 1 
+pr_state.state_pos 1 0 0 0 0 1 
+
+State Machine - |Asteroid|Control_pantalla:Bloque_pantall|fsm_hsyn:fsm_h|pr_state
+Name pr_state.state_es pr_state.state_1 pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 
+pr_state.state_1 0 1 1 
+pr_state.state_es 1 0 1 
+
+State Machine - |Asteroid|Control_pantalla:Bloque_pantall|fsm_vsyn:fsm_v|pr_state
+Name pr_state.state_syn pr_state.state_es pr_state.state_1 pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 0 
+pr_state.state_1 0 0 1 1 
+pr_state.state_es 0 1 0 1 
+pr_state.state_syn 1 0 0 1 
+
+State Machine - |Asteroid|Control_nave:Bloque_control_nave|fsm_control_nave:fsm|pr_state
+Name pr_state.state_fill pr_state.state_wf pr_state.state_ang pr_state.state_wait pr_state.state_erase pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 0 0 0 
+pr_state.state_erase 0 0 0 0 1 1 
+pr_state.state_wait 0 0 0 1 0 1 
+pr_state.state_ang 0 0 1 0 0 1 
+pr_state.state_wf 0 1 0 0 0 1 
+pr_state.state_fill 1 0 0 0 0 1 
+
+State Machine - |Asteroid|mando:Bloque_mando|teclado:fsm|pr_state
+Name pr_state.state_w0 pr_state.state_save_reg pr_state.state_wait1 pr_state.state_IDL 
+pr_state.state_IDL 0 0 0 0 
+pr_state.state_wait1 0 0 1 1 
+pr_state.state_save_reg 0 1 0 1 
+pr_state.state_w0 1 0 0 1 

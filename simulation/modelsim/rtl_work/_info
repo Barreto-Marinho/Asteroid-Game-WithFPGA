@@ -1,0 +1,951 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\xboxk\OneDrive\Documentos\7tmo_semestre\FPGA\Codigos\Asteroid\simulation\modelsim
+Easteroid
+Z1 w1618954439
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\xboxk\OneDrive\Documentos\7tmo_semestre\FPGA\Codigos\Asteroid\simulation\modelsim
+Z6 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Asteroid.vhd
+Z7 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Asteroid.vhd
+l0
+L5
+VJgQg<T_[IOO4n6jM0LR;D1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1619010709.024000
+Z10 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Asteroid.vhd|
+Z11 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Asteroid.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+!s100 i3jQ9nmkGQmD:QmCC0LSA1
+!i10b 1
+Artl
+Z14 DEx4 work 16 control_pantalla 0 22 I8G[NkUB]`NSF<43@c1=f1
+Z15 DEx4 work 12 control_nave 0 22 OPkoNzUjZPO_fBj235TjM2
+Z16 DEx4 work 14 control_angulo 0 22 BV0X]Z:W2NiPoYW^i03Y`3
+Z17 DEx4 work 5 mando 0 22 2<ShT682m@Jd=d3J`iKRf3
+R2
+R3
+R4
+Z18 DEx4 work 8 asteroid 0 22 JgQg<T_[IOO4n6jM0LR;D1
+l24
+L19
+V:Ff>fW5J^NUJi69LD77222
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 4R@VIjl[^ZP^1DXFW;Wd40
+!i10b 1
+Econtador_uni
+Z19 w1618686036
+R2
+R3
+R4
+R5
+Z20 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_uni.vhd
+Z21 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_uni.vhd
+l0
+L6
+Vd=795n37`bQoflUzK35^@2
+R8
+32
+Z22 !s108 1619010709.295000
+Z23 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_uni.vhd|
+Z24 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_uni.vhd|
+R12
+R13
+!s100 IenKa[?oGi@zDMMb^?_?Z1
+!i10b 1
+Artl
+R2
+R3
+R4
+Z25 DEx4 work 12 contador_uni 0 22 d=795n37`bQoflUzK35^@2
+l23
+L20
+VjPgg`l7kn2c6:eHm]61Mh0
+R8
+32
+R22
+R23
+R24
+R12
+R13
+!s100 1lXNzD8SCnZoRo]Sioofa3
+!i10b 1
+Econtador_updown
+Z26 w1619010662
+R2
+R3
+R4
+R5
+Z27 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_updown.vhd
+Z28 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_updown.vhd
+l0
+L6
+Vf=[AahW<bRcZG6N51e=O10
+R8
+32
+Z29 !s108 1619010709.491000
+Z30 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_updown.vhd|
+Z31 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/contador_updown.vhd|
+R12
+R13
+!s100 S?E>ShHD:Wk5XVMl6nUUh1
+!i10b 1
+Artl
+R2
+R3
+R4
+Z32 DEx4 work 15 contador_updown 0 22 f=[AahW<bRcZG6N51e=O10
+l24
+L20
+VL]]S00Ym?C=hIC1i;gz3g0
+R8
+32
+R29
+R30
+R31
+R12
+R13
+!s100 ?5j3SR3?caXCSk7b3RhBC3
+!i10b 1
+Econtrol_angulo
+Z33 w1619010446
+R2
+R3
+R4
+R5
+Z34 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_angulo.vhd
+Z35 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_angulo.vhd
+l0
+L5
+VBV0X]Z:W2NiPoYW^i03Y`3
+R8
+32
+Z36 !s108 1619010709.699000
+Z37 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_angulo.vhd|
+Z38 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_angulo.vhd|
+R12
+R13
+!s100 @Uz@ZQ_j:0azWh<IjZD9z0
+!i10b 1
+Artl
+Z39 DEx4 work 14 memoria_coseno 0 22 mJZia3g0kog0jh=g?l[cg1
+Z40 DEx4 work 12 memoria_seno 0 22 mASelh7^Gi@@8>OOC19J]2
+Z41 DEx4 work 10 fsm_angulo 0 22 EczWPf`:;SA9NhVDnG2hF1
+R32
+R2
+R3
+R4
+R16
+l21
+L17
+Vi1DU0`?6?8LHh74Xz7VSc3
+R8
+32
+R36
+R37
+R38
+R12
+R13
+!s100 L5BfBn?Qj>ER2>96k]<YA2
+!i10b 1
+Econtrol_asteroid
+Z42 w1618761746
+R2
+R3
+R4
+R5
+Z43 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_asteroid.vhd
+Z44 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_asteroid.vhd
+l0
+L5
+VIbPgKIXHIE5I=MNCN3ZzN1
+R8
+32
+Z45 !s108 1619010709.895000
+Z46 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_asteroid.vhd|
+Z47 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_asteroid.vhd|
+R12
+R13
+!s100 7lP2mYHba:AJdWY^DE[`T3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 16 control_asteroid 0 22 IbPgKIXHIE5I=MNCN3ZzN1
+l23
+L16
+V>mH:eHa1ScYeZ@VmDo3=30
+R8
+32
+R45
+R46
+R47
+R12
+R13
+!s100 IGTPnMa20M>AY=N@EP<Eb1
+!i10b 1
+Econtrol_nave
+Z48 w1618956432
+R2
+R3
+R4
+R5
+Z49 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_nave.vhd
+Z50 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_nave.vhd
+l0
+L5
+VOPkoNzUjZPO_fBj235TjM2
+R8
+32
+Z51 !s108 1619010710.102000
+Z52 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_nave.vhd|
+Z53 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_nave.vhd|
+R12
+R13
+!s100 cWD5XG_HdICidO^Uaj<M:3
+!i10b 1
+Artl
+Z54 DEx4 work 16 fsm_control_nave 0 22 A>adAzCU5:7`7EigLJbH:2
+Z55 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+Z56 DEx4 work 11 memoria_ram 0 22 ]IMemT=h<YH3CXR>;zXZ13
+Z57 DEx4 work 13 multiplicador 0 22 PnlPc?Q48171YdE229F_X2
+Z58 DEx4 work 7 sub_add 0 22 XzE_VLKGBC>W9iD?oFG<m2
+Z59 DEx4 work 16 miltiplicador_a2 0 22 P7G71oEC@aUhG3;7`FFjD2
+Z60 DEx4 work 16 flip_flop_vector 0 22 _YI7o;K<4hlAikk9H4YaB1
+Z61 DEx4 work 5 vec_y 0 22 iGQ@CNE=d@SB<=:96U^;S1
+Z62 DEx4 work 5 vec_x 0 22 ?=fE8WUIJAblKFjXYoiN11
+R25
+R2
+R3
+R4
+R15
+l36
+L20
+VW:^0V87DjSFUm]g>1hm:X3
+R8
+32
+R51
+R52
+R53
+R12
+R13
+!s100 >>jnXBX_]CFk>c[jGFghM2
+!i10b 1
+Econtrol_pantalla
+Z63 w1619008843
+R2
+R3
+R4
+R5
+Z64 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_pantalla.vhd
+Z65 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_pantalla.vhd
+l0
+L5
+VI8G[NkUB]`NSF<43@c1=f1
+R8
+32
+Z66 !s108 1619010710.336000
+Z67 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_pantalla.vhd|
+Z68 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Control_pantalla.vhd|
+R12
+R13
+!s100 1aK?JR<BYH6ZInngK?5d[1
+!i10b 1
+Artl
+Z69 DEx4 work 8 fsm_hsyn 0 22 Q7iS1j5B5z0lVDe>k>X8o1
+Z70 DEx4 work 8 fsm_vsyn 0 22 h>D<@oChH@KB@[P>B=R_d1
+R25
+R60
+R2
+R3
+R4
+R14
+l34
+L21
+VY@FzjEL7ND<Ija@@3?]Xg0
+R8
+32
+R66
+R67
+R68
+R12
+R13
+!s100 [lk8[i`c9ezDTEj5d9hDh3
+!i10b 1
+Eflip_flop_vector
+Z71 w1618762584
+R3
+R4
+R5
+Z72 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Flip_flop_vector.vhd
+Z73 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Flip_flop_vector.vhd
+l0
+L5
+V_YI7o;K<4hlAikk9H4YaB1
+R8
+32
+Z74 !s108 1619010710.571000
+Z75 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Flip_flop_vector.vhd|
+Z76 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Flip_flop_vector.vhd|
+R12
+R13
+!s100 mNXnXkU@DfoX7a]cIkI?O3
+!i10b 1
+Artl
+R3
+R4
+R60
+l16
+L14
+V6=mKDTDZ92ShL<iDlO:>H3
+R8
+32
+R74
+R75
+R76
+R12
+R13
+!s100 `^8TVHYogTJHGbM@M<W8:0
+!i10b 1
+Efsm_angulo
+Z77 w1618685326
+R2
+R3
+R4
+R5
+Z78 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_angulo.vhd
+Z79 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_angulo.vhd
+l0
+L5
+VEczWPf`:;SA9NhVDnG2hF1
+R8
+32
+Z80 !s108 1619010710.786000
+Z81 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_angulo.vhd|
+Z82 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_angulo.vhd|
+R12
+R13
+!s100 BO;GRolZWflGTRQ@6AFoO1
+!i10b 1
+Artl
+R2
+R3
+R4
+R41
+l17
+L13
+V[R<PJzoACPORBKJ6^nAPO1
+R8
+32
+R80
+R81
+R82
+R12
+R13
+!s100 I;WboAdc3SDo0W6fC2Gic1
+!i10b 1
+Efsm_control_nave
+Z83 w1618958763
+R2
+R3
+R4
+R5
+Z84 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_control_nave.vhd
+Z85 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_control_nave.vhd
+l0
+L5
+VA>adAzCU5:7`7EigLJbH:2
+R8
+32
+Z86 !s108 1619010710.987000
+Z87 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_control_nave.vhd|
+Z88 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_control_nave.vhd|
+R12
+R13
+!s100 MNFZ3CR^:>E?mgkbmgo1m2
+!i10b 1
+Artl
+R2
+R3
+R4
+R54
+l21
+L17
+VS>R@ESBi]TbFYhn2EY_BH0
+R8
+32
+R86
+R87
+R88
+R12
+R13
+!s100 8hGIVZH>1gB7X4RQHdhjM3
+!i10b 1
+Efsm_hsyn
+Z89 w1618686053
+R2
+R3
+R4
+R5
+Z90 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_hsyn.vhd
+Z91 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_hsyn.vhd
+l0
+L5
+VQ7iS1j5B5z0lVDe>k>X8o1
+R8
+32
+Z92 !s108 1619010711.182000
+Z93 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_hsyn.vhd|
+Z94 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_hsyn.vhd|
+R12
+R13
+!s100 WBXk3iBA2ZDbS@7icV3^83
+!i10b 1
+Artl
+R2
+R3
+R4
+R69
+l21
+L17
+VVj_g30h0m1WP]n:NUF3c]0
+R8
+32
+R92
+R93
+R94
+R12
+R13
+!s100 SS7?NSIPmhMXFo0E:22@]1
+!i10b 1
+Efsm_vsyn
+Z95 w1618686071
+R2
+R3
+R4
+R5
+Z96 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_vsyn.vhd
+Z97 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_vsyn.vhd
+l0
+L5
+Vh>D<@oChH@KB@[P>B=R_d1
+R8
+32
+Z98 !s108 1619010711.374000
+Z99 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_vsyn.vhd|
+Z100 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/fsm_vsyn.vhd|
+R12
+R13
+!s100 lS347ozcTkd<L?mMlI_Yo2
+!i10b 1
+Artl
+R2
+R3
+R4
+R70
+l21
+L17
+V^C4?@;1z4404>?IFFjnDU1
+R8
+32
+R98
+R99
+R100
+R12
+R13
+!s100 E@gPMg[=XLDcXVVmo86cK3
+!i10b 1
+Emando
+Z101 w1618846488
+R2
+R3
+R4
+R5
+Z102 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/mando.vhd
+Z103 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/mando.vhd
+l0
+L5
+V2<ShT682m@Jd=d3J`iKRf3
+R8
+32
+Z104 !s108 1619010711.583000
+Z105 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/mando.vhd|
+Z106 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/mando.vhd|
+R12
+R13
+!s100 N;^k?Kb:j0iB:;dPakD<i3
+!i10b 1
+Artl
+Z107 DEx4 work 7 teclado 0 22 >kEc<O_oUzQ<ZoUYl;be:3
+R25
+Z108 DEx4 work 6 my_dff 0 22 O`[8QH=5VLQNn=L3ag]n53
+R2
+R3
+R4
+R17
+l24
+L18
+VOjA0XemB46GNgc>D^Zon>3
+R8
+32
+R104
+R105
+R106
+R12
+R13
+!s100 bTTY:Q2e_]mWggiRZFAk[1
+!i10b 1
+Ememoria_coseno
+Z109 w1618692453
+R2
+R3
+R4
+R5
+Z110 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_coseno.vhd
+Z111 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_coseno.vhd
+l0
+L5
+VmJZia3g0kog0jh=g?l[cg1
+R8
+32
+Z112 !s108 1619010711.849000
+Z113 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_coseno.vhd|
+Z114 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_coseno.vhd|
+R12
+R13
+!s100 jM_WA<el=EO=SJ]ejF5F31
+!i10b 1
+Afuntional
+R2
+R3
+R4
+R39
+l35
+L13
+V>6?[fX8oWmO^_Kml`15FP2
+R8
+32
+R112
+R113
+R114
+R12
+R13
+!s100 IJXbQ=FZlRXlR>_nkZ]421
+!i10b 1
+Ememoria_ram
+Z115 w1618765528
+R55
+R3
+R4
+R5
+Z116 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/memoria_RAM.vhd
+Z117 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/memoria_RAM.vhd
+l0
+L42
+V]IMemT=h<YH3CXR>;zXZ13
+R8
+32
+Z118 !s108 1619010712.052000
+Z119 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/memoria_RAM.vhd|
+Z120 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/memoria_RAM.vhd|
+R12
+R13
+!s100 =k;ZdL6jlOIZNGP<BfCgg1
+!i10b 1
+Asyn
+R55
+R3
+R4
+R56
+l61
+L57
+VMnWiOg`NVWXYD]J[@To`K2
+R8
+32
+R118
+R119
+R120
+R12
+R13
+!s100 =EOQR767oaOCo865U>E[n1
+!i10b 1
+Ememoria_seno
+Z121 w1618692597
+R2
+R3
+R4
+R5
+Z122 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_seno.vhd
+Z123 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_seno.vhd
+l0
+L5
+VmASelh7^Gi@@8>OOC19J]2
+R8
+32
+Z124 !s108 1619010712.261000
+Z125 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_seno.vhd|
+Z126 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Memoria_seno.vhd|
+R12
+R13
+!s100 TAmU34hUm;^iAmD8M1bCE3
+!i10b 1
+Afuntional
+R2
+R3
+R4
+R40
+l35
+L13
+VTAU@N:F8QJMSneTH0RMKl1
+R8
+32
+R124
+R125
+R126
+R12
+R13
+!s100 KVVgUQbEc141BQo]_mM:B2
+!i10b 1
+Emiltiplicador_a2
+Z127 w1618760555
+R2
+R3
+R4
+R5
+Z128 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Miltiplicador_a2.vhd
+Z129 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Miltiplicador_a2.vhd
+l0
+L5
+VP7G71oEC@aUhG3;7`FFjD2
+R8
+32
+Z130 !s108 1619010712.476000
+Z131 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Miltiplicador_a2.vhd|
+Z132 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Miltiplicador_a2.vhd|
+R12
+R13
+!s100 LH?nV42c[61Jie052Q>>f2
+!i10b 1
+Artl
+R57
+R2
+R3
+R4
+R59
+l17
+L13
+VIl@3kFeV3U[_K:PJAFFQn2
+R8
+32
+R130
+R131
+R132
+R12
+R13
+!s100 fFlhX3Xk`3kGXFTLkT7Y43
+!i10b 1
+Emulti_a2_tb
+Z133 w1618761450
+R2
+R3
+R4
+R5
+Z134 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/multi_a2_tb.vhd
+Z135 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/multi_a2_tb.vhd
+l0
+L5
+VjYA6Ma;DLI5<L`?3k_L@T2
+R8
+32
+Z136 !s108 1619010712.645000
+Z137 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/multi_a2_tb.vhd|
+Z138 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/multi_a2_tb.vhd|
+R12
+R13
+!s100 VzebMjSnC]lO0>Ndk4i[`2
+!i10b 1
+Atestbench
+R58
+R2
+R3
+R4
+DEx4 work 11 multi_a2_tb 0 22 jYA6Ma;DLI5<L`?3k_L@T2
+l14
+L8
+V<S72EVmY>IGFO[=Pa<U[V0
+R8
+32
+R136
+R137
+R138
+R12
+R13
+!s100 ogXkeH=z:eNPJQ=S<2WOb0
+!i10b 1
+Emultiplicador
+Z139 w1618682833
+R3
+R4
+R5
+Z140 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Multiplicador.vhd
+Z141 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Multiplicador.vhd
+l0
+L42
+VPnlPc?Q48171YdE229F_X2
+R8
+32
+Z142 !s108 1619010713.571000
+Z143 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Multiplicador.vhd|
+Z144 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Multiplicador.vhd|
+R12
+R13
+!s100 ?aTcmFGXfMNH=mhXSBRSN2
+!i10b 1
+Asyn
+R3
+R4
+R57
+l75
+L53
+V8@2[oW9fie<VccGo0RN>B3
+R8
+32
+R142
+R143
+R144
+R12
+R13
+!s100 hf56g_=5dFdJ6KjTeZhn62
+!i10b 1
+Emy_dff
+Z145 w1618770935
+R3
+R4
+R5
+Z146 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/my_dff.vhd
+Z147 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/my_dff.vhd
+l0
+L4
+VO`[8QH=5VLQNn=L3ag]n53
+R8
+32
+Z148 !s108 1619010713.753000
+Z149 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/my_dff.vhd|
+Z150 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/my_dff.vhd|
+R12
+R13
+!s100 lX1zhO[BEJGQ2Mf5b?62I3
+!i10b 1
+Artl
+R3
+R4
+R108
+l13
+L12
+VA0Ya>Q9]2lWQ@MfmEGLXM2
+R8
+32
+R148
+R149
+R150
+R12
+R13
+!s100 R<UCTNO8;DNHOefV?eiXi1
+!i10b 1
+Epantalla_tb
+Z151 w1618956138
+R3
+R4
+R5
+Z152 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/pantalla_tb.vhd
+Z153 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/pantalla_tb.vhd
+l0
+L4
+V52Y0hWcAKTXf3b:JZgXCW3
+R8
+32
+Z154 !s108 1619010713.925000
+Z155 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/pantalla_tb.vhd|
+Z156 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/pantalla_tb.vhd|
+R12
+R13
+!s100 b3=;oN:J4ZS`7ZTldmNbD0
+!i10b 1
+Atestbench
+R2
+R18
+R3
+R4
+DEx4 work 11 pantalla_tb 0 22 52Y0hWcAKTXf3b:JZgXCW3
+l18
+L7
+VlndPE0TfgeiEaRhZg^a3z0
+R8
+32
+R154
+R155
+R156
+R12
+R13
+!s100 K]fkkOD6l9L6RkKKK_DhV0
+!i10b 1
+Esub_add
+Z157 w1618761165
+R2
+R3
+R4
+R5
+Z158 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/sub_add.vhd
+Z159 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/sub_add.vhd
+l0
+L5
+VXzE_VLKGBC>W9iD?oFG<m2
+R8
+32
+Z160 !s108 1619010714.138000
+Z161 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/sub_add.vhd|
+Z162 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/sub_add.vhd|
+R12
+R13
+!s100 P?<Eg[8elM:E[Z2eDR?jk3
+!i10b 1
+Artl
+R2
+R3
+R4
+R58
+l16
+L14
+VFi;@VI^8lCSbe4;_>Kz5_3
+R8
+32
+R160
+R161
+R162
+R12
+R13
+!s100 a?TRb0`aKJN1>JX[n4h]k2
+!i10b 1
+Eteclado
+Z163 w1618797446
+R2
+R3
+R4
+R5
+Z164 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/teclado.vhd
+Z165 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/teclado.vhd
+l0
+L5
+V>kEc<O_oUzQ<ZoUYl;be:3
+R8
+32
+Z166 !s108 1619010714.331000
+Z167 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/teclado.vhd|
+Z168 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/teclado.vhd|
+R12
+R13
+!s100 hMO_EfJ^Af682d14Q3Ma_2
+!i10b 1
+Artl
+R2
+R3
+R4
+R107
+l19
+L15
+VaO;e=^dINW;kgH^f^bUPI2
+R8
+32
+R166
+R167
+R168
+R12
+R13
+!s100 X44UcJICT?h]@V^g`fJl;1
+!i10b 1
+Evec_x
+Z169 w1618767589
+R2
+R3
+R4
+R5
+Z170 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_x.vhd
+Z171 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_x.vhd
+l0
+L5
+V?=fE8WUIJAblKFjXYoiN11
+R8
+32
+Z172 !s108 1619010714.514000
+Z173 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_x.vhd|
+Z174 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_x.vhd|
+R12
+R13
+!s100 `W99ZDi0ZE1T39:PC]7gH0
+!i10b 1
+Afuntional
+R2
+R3
+R4
+R62
+l51
+L13
+V[ee8d=P?[@`=URPm>@^]?2
+!s100 ED8CiYGTXBn8;lLciEo9K1
+R8
+32
+R172
+R173
+R174
+R12
+R13
+!i10b 1
+Evec_y
+Z175 w1618767603
+R2
+R3
+R4
+R5
+Z176 8C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_y.vhd
+Z177 FC:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_y.vhd
+l0
+L5
+ViGQ@CNE=d@SB<=:96U^;S1
+!s100 ]JglcG^=EeQ1eAOSfbShz1
+R8
+32
+!i10b 1
+Z178 !s108 1619010714.682000
+Z179 !s90 -reportprogress|300|-work|work|-O0|C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_y.vhd|
+Z180 !s107 C:/Users/xboxk/OneDrive/Documentos/7tmo_semestre/FPGA/Codigos/Asteroid/Vec_y.vhd|
+R12
+R13
+Afuntional
+R2
+R3
+R4
+R61
+l51
+L13
+Z181 Va258;V[BO<@XDO:^kTe631
+Z182 !s100 P6[VL``KgO7II=]LVgI`c2
+R8
+32
+!i10b 1
+R178
+R179
+R180
+R12
+R13

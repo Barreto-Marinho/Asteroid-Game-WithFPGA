@@ -1,0 +1,44 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+-------------------------------------
+ENTITY pantalla_tb IS
+END ENTITY  pantalla_tb ;
+-------------------------------------
+ARCHITECTURE testbench OF pantalla_tb  IS
+
+	SIGNAL	clk,syn_clr_pan		:   STD_LOGIC := '0';
+	SIGNAL   strobe  			 :   STD_LOGIC := '1';   
+	SIGNAL   rst     			 :   STD_LOGIC := '1';
+	SIGNAL   vsyn     		 :   STD_LOGIC ;	
+	SIGNAL   hsyn     		 :   STD_LOGIC ;
+	SIGNAL   signal_16_m     :   STD_LOGIC ;	
+	SIGNAL   VGA_R    		 :   STD_LOGIC_VECTOR(3 DOWNTO 0);	
+	SIGNAL   VGA_G    		 :   STD_LOGIC_VECTOR(3 DOWNTO 0);	
+	SIGNAL   VGA_B    		 :   STD_LOGIC_VECTOR(3 DOWNTO 0);	
+	SIGNAL   x_actual 		 :   STD_LOGIC_VECTOR(9 DOWNTO 0);
+	SIGNAL   y_actual 		 :   STD_LOGIC_VECTOR(8 DOWNTO 0);	
+	
+		
+BEGIN
+	--CLOCK GENERATION:------------------------
+	clk <= not clk after 10ns; -- 50MHz clock generation
+	--RESET GENERATION:------------------------
+	rst <= '0' after 20ns;
+	
+	
+	DUT:	ENTITY work.Control_pantalla				 
+	PORT MAP(	clk   => clk,
+					strobe=> strobe,
+					rst   => rst,
+					vsyn  => vsyn,
+					hsyn  => hsyn,
+					VGA_R => VGA_R,
+					VGA_G => VGA_G,
+					VGA_B => VGA_B,
+					signal_16_m=>signal_16_m,
+					x_actual=> x_actual,
+					y_actual=> y_actual,
+					syn_clr_pan=>syn_clr_pan);
+																											
+														
+END ARCHITECTURE testbench;

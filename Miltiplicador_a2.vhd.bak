@@ -1,0 +1,57 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------
+ENTITY Miltiplicador_a2 IS
+	PORT    ( clk         :  IN    STD_LOGIC;
+				 rst         :  IN    STD_LOGIC;
+				 sel_angulo  :  IN    STD_LOGIC;
+				 signal_16_m :  IN    STD_LOGIC;
+				 derecha_b   :  IN    STD_LOGIC;
+				 izquierda_b :  IN    STD_LOGIC;
+				 Angulo      :  OUT    STD_LOGIC_VECTOR(9 DOWNTO 0)
+				);
+END ENTITY Control_asteroid;
+-------------------------------------------------------------------------------			 
+ARCHITECTURE  rtl OF Control_asteroid IS	
+	SIGNAL up, ena, signal_XOR  : STD_LOGIC;
+	SIGNAL ena_ang 				: STD_LOGIC;
+	SIGNAL result					: STD_LOGIC_VECTOR (11 DOWNTO 0);
+	SIGNAL counter					: STD_LOGIC_VECTOR (5 DOWNTO 0);
+
+	
+BEGIN
+	
+	Angulo<= result(9 DOWNTO 0);
+	
+	mul:ENTITY work.multiplicador
+	GENERIC MAP(N => 6)
+	PORT MAP ( dataa	=> counter,	
+				  datab 	=> "000110",
+				  result => result );
+				  
+	up			 <= izquierda_b;
+	signal_XOR <= izquierda_b XOR derecha_b;
+	ena       <= (signal_XOR AND ena_ang) OR sel_angulo;
+				  
+	cont_memo:ENTITY work.contador_updown
+	GENERIC MAP(N => 6)
+	PORT MAP ( clk      => clk,
+				  rst      => rst,
+				  up       => up,
+				  syn_clr  => sel_angulo,
+				  ini      => "001111",
+				  ena      => ena,
+				  max      => "111011",
+				  counter  => counter);			  
+
+	fsm:ENTITY work.fsm_angulo
+	PORT MAP ( clk     		 => clk,
+				  rst      		 => rst,
+				  signal_16_m   => signal_16_m,
+				  signal_XOR  	 => signal_XOR,
+				  ena_ang  	    => ena_ang);		
+			
+		
+
+END ARCHITECTURE rtl;

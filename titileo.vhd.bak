@@ -1,0 +1,42 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------
+ENTITY titileo IS
+	PORT    ( clk         :  IN    STD_LOGIC;
+				 rst         :  IN    STD_LOGIC;
+				 titi        :  OUT   STD_LOGIC
+				);
+END ENTITY titileo;
+-------------------------------------------------------------------------------			 
+ARCHITECTURE  rtl OF titileo IS	
+
+	SIGNAL max_tick, q , q_neg  : STD_LOGIC;
+
+BEGIN
+	
+
+	cont_memo:ENTITY work.contador_updown
+	GENERIC MAP(N => 25)
+	PORT MAP ( clk      => clk,
+				  rst      => rst,
+				  up       => '1',
+				  syn_clr  => '0',
+				  ini      => "0000000000000000000000000",
+				  ena      => '1',
+				  max_tick => max_tick,
+				  max      => "1011111010111100001000000");			  
+-------------------------------------------------------------------------------
+	q_neg<= NOT q;
+
+	titi<= q;
+	
+	osc:ENTITY work.my_dff
+	PORT MAP ( clk   => clk,
+				  rst   => rst,
+				  en    => max_tick,
+				  d     => q_neg,
+				  q     => q);	
+		
+
+END ARCHITECTURE rtl;

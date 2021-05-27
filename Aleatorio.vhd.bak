@@ -1,0 +1,180 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------
+ENTITY Aleatorio IS
+	PORT    ( clk              :  IN    STD_LOGIC;
+				 rst              :  IN    STD_LOGIC;
+				 N_asteroide      :  IN    STD_LOGIC_VECTOR(2 DOWNTO 0);
+				 chopper_6        :  IN    STD_LOGIC_VECTOR(5 DOWNTO 0);
+				 angulo_aleatorio :  OUT   STD_LOGIC_VECTOR(5 DOWNTO 0);
+				 pos_x            :  OUT   STD_LOGIC_VECTOR(19 DOWNTO 0);
+				 pos_x            :  OUT   STD_LOGIC_VECTOR(18 DOWNTO 0));
+END ENTITY Aleatorio;
+-------------------------------------------------------------------------------			 
+ARCHITECTURE  rtl OF Control_nave IS	
+	SIGNAL  ena_count, syn_clr, max_tick, ena_Reg 	: STD_LOGIC;
+	SIGNAL  ena_write, enable_x, enable_y           : STD_LOGIC;
+	SIGNAL  write_s, read_ram                       : STD_LOGIC_VECTOR(0 DOWNTO 0);
+	SIGNAL  addr_vec            			 				: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL  resta_y_ac, suma_y_ac,seleccion_y	 		: STD_LOGIC_VECTOR(9 DOWNTO 0);
+	SIGNAL  resta_x_ac, suma_x_ac,seleccion_x       : STD_LOGIC_VECTOR(10 DOWNTO 0);
+	SIGNAL  r_data_x, r_data_y, mul_5,addres_write  : STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL  sen_angulo_reg,cos_angulo_reg           : STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL  multi_y_actual, address_read			   : STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL  mul_1, mul_2, mul_3, mul_4, resta_1     : STD_LOGIC_VECTOR(22 DOWNTO 0);
+	SIGNAL  resta_2									      : STD_LOGIC_VECTOR(22 DOWNTO 0);
+	SIGNAL  despla_1, despla_2, sum_1, sum_2        : STD_LOGIC_VECTOR(12 DOWNTO 0);
+	SIGNAL  data_b_aux_1	,data_b_aux_2				   : STD_LOGIC_VECTOR(11 DOWNTO 0);
+
+	
+BEGIN
+
+------------------------------------------------------------------------------
+	cont:ENTITY work.contador_uni
+	GENERIC MAP(N => 8)
+	PORT MAP ( clk      => clk,
+				  rst      => rst,
+				  up       => '1',
+				  syn_clr  => syn_clr,
+				  ini      => "00000000",
+				  ena      => ena_count,
+				  max      => "11000111",
+				  counter  => addr_vec,
+				  max_tick => max_tick);
+-------------------------------------------------------------------------------			
+	r_data_x(11 DOWNTO 6)<= "000000" WHEN r_data_x(5)='0' ELSE
+									"111111";
+		  
+	memo_vecx:ENTITY work.Vec_x
+	GENERIC MAP(DATA_WIDTH => 6,
+					ADDR_WIDTH => 8)
+	PORT MAP ( clk      => clk,
+				  addr     =>addr_vec,
+				  r_data   =>r_data_x(5 DOWNTO 0));
+	
+-------------------------------------------------------------------------------
+	r_data_y(11 DOWNTO 6)<= "000000" WHEN r_data_y(5)='0' ELSE
+									"111111";
+	
+	memo_vecy:ENTITY work.Vec_y
+	GENERIC MAP(DATA_WIDTH => 6,
+					ADDR_WIDTH => 8)
+	PORT MAP ( clk      => clk,
+				  addr     =>addr_vec,
+				  r_data   =>r_data_y(5 DOWNTO 0));
+				  
+-------------------------------------------------------------------------------
+				  
+	ff_sen:ENTITY work.Flip_flop_vector
+	GENERIC MAP(N => 12)
+	PORT MAP ( clk   => clk,
+				  rst   =>rst,
+				  ena   =>ena_Reg,
+				  sign  =>sen_angulo,
+				  reg   =>sen_angulo_reg);		
+				  
+-------------------------------------------------------------------------------
+	
+	ff_cos:ENTITY work.Flip_flop_vector
+	GENERIC MAP(N => 12)
+	PORT MAP ( clk   => clk,
+				  rst   =>rst,
+				  ena   =>ena_Reg,
+				  sign  =>cos_angulo,
+				  reg   =>cos_angulo_reg);		
+				  
+-------------------------------------------------------------------------------
+
+	mu_1:ENTITY work.Miltiplicador_a2
+	GENERIC MAP(N => 12)
+	PORT MAP ( data_a  => cos_angulo_reg,
+				  data_b  => r_data_x,
+				  multi   => mul_1);	
+				  
+-------------------------------------------------------------------------------
+
+	mu_2:ENTITY work.Miltiplicador_a2
+	GENERIC MAP(N => 12)
+	PORT MAP ( data_a  => sen_angulo_reg,
+				  data_b  => r_data_y,
+				  multi   => mul_2);	
+				  
+-------------------------------------------------------------------------------
+
+	mu_3:ENTITY work.Miltiplicador_a2
+	GENERIC MAP(N => 12)
+	PORT MAP ( data_a  => sen_angulo_reg,
+				  data_b  => r_data_x,
+				  multi   => mul_3);	
+				  
+				  
+-----------------------------------------------------------------------------
+
+	mu_4:ENTITY work.Miltiplicador_a2
+	GENERIC MAP(N => 12)
+	PORT MAP ( data_a  => cos_angulo_reg,
+				  data_b  => r_data_y,
+				  multi   => mul_4);	
+
+-----------------------------------------------------------------------------
+
+	rest_1:ENTITY work.sub_add
+	GENERIC MAP(N => 23)
+	PORT MAP ( data_a    => mul_1,
+				  data_b    => mul_2,
+				  ena_sum   => '1',
+				  ope       => resta_1);	  
+			
+-----------------------------------------------------------------------------
+	despla_1<= resta_1(22 DOWNTO 10);
+	despla_2<= resta_2(22 DOWNTO 10);
+
+	rest_2:ENTITY work.sub_add
+	GENERIC MAP(N => 23)
+	PORT MAP ( data_a    => mul_3,
+				  data_b    => mul_4,
+				  ena_sum   => '0',
+				  ope       => resta_2);	
+-----------------------------------------------------------------------------	
+
+	sum:ENTITY work.sub_add
+	GENERIC MAP(N => 13)
+	PORT MAP ( data_a    => despla_1,
+				  data_b    => "0000000011110",
+				  ena_sum   => '1',
+				  ope       => sum_1);				
+			
+-----------------------------------------------------------------------------	
+
+	sum_11:ENTITY work.sub_add
+	GENERIC MAP(N => 13)
+	PORT MAP ( data_a    => despla_2,
+				  data_b    => "0000000011110",
+				  ena_sum   => '1',
+				  ope       => sum_2);
+				  
+-----------------------------------------------------------------------------	
+	mu_5:ENTITY work.Multiplicador
+	GENERIC MAP(N => 6)
+	PORT MAP ( dataa  => sum_2(5 DOWNTO 0),
+				  datab  => "111101",
+				  result   => mul_5);	
+-----------------------------------------------------------------------------
+	data_b_aux_2<= "000000" & sum_1(5 DOWNTO 0);
+	sum_12:ENTITY work.sub_add
+	GENERIC MAP(N => 12)
+	PORT MAP ( data_a    => mul_5,
+				  data_b    => data_b_aux_2,
+				  ena_sum   => '1',
+				  ope       => addres_write);			  
+-----------------------------------------------------------------------------
+	rest_x:ENTITY work.sub_add
+	GENERIC MAP(N => 11)
+	PORT MAP ( data_a    =>'0' & x_actual,
+				  data_b    =>'0' & x_nave,
+				  ena_sum   => '0',
+				  ope       => resta_x_ac);	  			  
+-----------------------------------------------------------------------------
+	
+END ARCHITECTURE rtl;

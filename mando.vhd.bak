@@ -1,0 +1,40 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------
+ENTITY mando IS
+	PORT    ( data         :  IN     STD_LOGIC;
+				 clk_teclado  :  IN     STD_LOGIC;
+				 clk          :  IN     STD_LOGIC;
+				 data         :  IN     STD_LOGIC;
+				 registro     :  OUT    STD_LOGIC_VECTOR(7 DOWNTO 0)
+				);
+END ENTITY mando;
+-------------------------------------------------------------------------------			 
+ARCHITECTURE  rtl OF mando IS	
+	SIGNAL max_tick, ena_reg	: STD_LOGIC;
+	SIGNAL counter	   : STD_LOGIC_VECTOR(3 DOWNTO 0);
+BEGIN
+
+	DUT: ENTITY work.my_dff
+	PORT MAP (		clk				=>	clk_signal,
+						rst				=>	rst_signal,
+						en 				=>	en_signal,
+						d 					=>	d_signal,
+						q 					=>	q_signal);
+						
+						
+						
+	cont_x:ENTITY work.contador_uni
+	GENERIC MAP(N => 4)
+	PORT MAP ( clk      => clk,
+				  rst      => rst,
+				  up       => '1',
+				  syn_clr  => '0',
+				  ini      => "0000",
+				  ena      => ena_reg,
+				  max      => "1011",
+				  counter  => counter,
+				  max_tick => max_tick);
+
+END ARCHITECTURE rtl;

@@ -1,0 +1,36 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------------
+ENTITY control_chopper IS
+	PORT (  nave    			  :  IN    STD_LOGIC;
+			  bola       		  :  IN    STD_LOGIC_VECTOR(2 DOWNTO 0);
+			  asteroide   		  :  IN    STD_LOGIC_VECTOR(23 DOWNTO 0);
+			  perder            :  OUT   STD_LOGIC;
+			  choque_bola       :  OUT   STD_LOGIC_VECTOR(2 DOWNTO 0);
+			  chopper           :  OUT   STD_LOGIC_VECTOR(23 DOWNTO 0)
+		);
+END ENTITY control_chopper;
+-------------------------------------------------------------------------------------
+ARCHITECTURE rtl OF control_chopper IS
+SIGNAL perder_sign, chopper_sign        :STD_LOGIC;
+
+-------------------------------------------------------------------------------------
+BEGIN
+
+perder_sign <= '1' WHEN nave = '1' AND  asteroide/= "000000000000000000000000" ELSE
+               '0';
+
+chopper_sign<= '1' WHEN bola/="000" AND  asteroide/= "000000000000000000000000" ELSE
+               '0';
+
+chopper<= asteroide WHEN  chopper_sign='1' ELSE
+			"000000000000000000000000";
+
+perder<= perder_sign;
+
+choque_bola<= bola WHEN chopper_sign='1' ELSE
+              "000";
+			
+						
+END ARCHITECTURE rtl;

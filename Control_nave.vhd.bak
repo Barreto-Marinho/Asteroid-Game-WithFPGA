@@ -1,0 +1,53 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+------------------------------------------------------------------------------
+ENTITY Control_nave IS
+	PORT    ( clk         :  IN    STD_LOGIC;
+				 rst         :  IN    STD_LOGIC;
+				 x_actual    :  IN    STD_LOGIC_VECTOR();
+				 y_actual    :  IN    STD_LOGIC_VECTOR();
+				 x_nave      :  IN    STD_LOGIC_VECTOR();
+				 y_nave      :  IN    STD_LOGIC_VECTOR();
+
+				);
+END ENTITY Control_nave;
+-------------------------------------------------------------------------------			 
+ARCHITECTURE  rtl OF Control_nave IS	
+	SIGNAL  : STD_LOGIC;
+
+
+	
+BEGIN
+	
+	Angulo<= result(9 DOWNTO 0);
+-------------------------------------------------------------------------------	
+	mul:ENTITY work.multiplicador
+	GENERIC MAP(N => 6)
+	PORT MAP ( dataa	=> counter,	
+				  datab 	=> "000110",
+				  result => result );
+				  
+-------------------------------------------------------------------------------	
+				  
+	up			 <= izquierda_b;
+	signal_XOR <= izquierda_b XOR derecha_b;
+	ena       <= (signal_XOR AND ena_ang) OR sel_angulo;
+				  
+	cont_memo:ENTITY work.contador_updown
+	GENERIC MAP(N => 6)
+	PORT MAP ( clk      => clk,
+				  rst      => rst,
+				  up       => up,
+				  syn_clr  => sel_angulo,
+				  ini      => "001111",
+				  ena      => ena,
+				  max      => "111011",
+				  counter  => counter);			  
+
+				  
+-------------------------------------------------------------------------------					  
+
+		
+
+END ARCHITECTURE rtl;
